@@ -4,10 +4,12 @@
             var name = document.querySelector('[name="name"]').value;
             var year = document.querySelector('[name="year"]').value;
             if(name !="" && year !="")
-            document.getElementById('change').innerHTML = "http://localhost:8080/?name=" + name + "&year=" + year;
+            document.getElementById('url').innerHTML = "http://localhost:8080/?name=" + name + "&year=" + year;
             else if(name =="" && year !="")
-            document.getElementById('change').innerHTML = "http://localhost:8080/?year=" + year ;
+            document.getElementById('url').innerHTML = "http://localhost:8080/?year=" + year ;
             else if(name !="" && year =="")
-            document.getElementById('change').innerHTML = "http://localhost:8080/?name=" + name ;
+            document.getElementById('url').innerHTML = "http://localhost:8080/?name=" + name ;
             else
-            document.getElementById('change').innerHTML = "http://localhost:8080/" ;
+            document.getElementById('url').innerHTML = "http://localhost:8080/" ;
+
+        });
